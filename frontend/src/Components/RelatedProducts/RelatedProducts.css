@@ -1,0 +1,128 @@
+.relatedproducts {
+  padding: 60px 5%;
+  background-color: #FAFAFA;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.relatedproducts h1 {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.relatedproducts hr {
+  width: 100px;
+  height: 3px;
+  background-color: #D97D54;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto 40px auto;
+}
+
+/* === GRID LAYOUT like .popular-item === */
+.relatedproducts-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+/* === CARD STYLE (reuse your .item class or create .related-card) === */
+.related-card {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+.related-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* === IMAGE STYLE === */
+.related-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+
+/* === CARD TEXT === */
+.related-card .item-details {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.related-card .item-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.related-card .prices {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.related-card .new-price {
+  color: #D97D54;
+  font-weight: 600;
+}
+
+.related-card .old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .relatedproducts {
+    padding: 40px 0;
+  }
+
+  .relatedproducts h1 {
+    font-size: 28px;
+  }
+
+  .relatedproducts-item {
+    gap: 30px;
+    width: 95%;
+  }
+
+  .related-card img {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .related-card img {
+    height: 200px;
+  }
+
+  .related-card .item-details h3 {
+    font-size: 14px;
+  }
+
+  .related-card .prices {
+    font-size: 13px;
+  }
+}

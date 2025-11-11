@@ -1,0 +1,114 @@
+.popular {
+  padding: 60px 5%;
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
+.popular h1 {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.popular hr {
+  width: 100px;
+  height: 3px;
+  background-color: #D97D54;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto 40px auto;
+}
+
+/* ===== GRID LAYOUT ===== */
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+/* ===== CARD STYLE ===== */
+.item {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== IMAGE STYLE ===== */
+.item img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+
+/* ===== TEXT CONTENT ===== */
+.item-details {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.item-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.item-details .prices {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.item-details .new-price {
+  color: #D97D54;
+  font-weight: 600;
+}
+
+.item-details .old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  .popular {
+    padding: 40px 0;
+  }
+
+  .popular h1 {
+    font-size: 28px;
+  }
+
+  .popular-item {
+    gap: 30px;
+    width: 95%;
+  }
+
+  .item img {
+    height: 240px;
+  }
+}

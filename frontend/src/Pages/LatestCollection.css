@@ -1,0 +1,101 @@
+.latest-collection-page {
+  width: 100%;
+  background-color: #fff;
+}
+
+.breadcrumb-simple {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb-simple span {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.latest-collection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.latest-collection-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.latest-collection-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.latest-collection-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.latest-collection-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+}
+
+.no-products {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #999;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .latest-collection-header h1 {
+    font-size: 36px;
+  }
+
+  .latest-collection-header p {
+    font-size: 16px;
+  }
+
+  .latest-collection-items {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .latest-collection-container {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-collection-header h1 {
+    font-size: 28px;
+  }
+
+  .latest-collection-items {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}
+

@@ -1,0 +1,75 @@
+.DescriptionBox {
+  padding: 40px 5%;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.descriptionbox-nav-box {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 2px solid #D97D54;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+.descriptionbox-nav-box.fade {
+  font-weight: 500;
+  color: #999;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.descriptionbox-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.descriptionbox-description p {
+  margin-bottom: 14px;
+}
+
+.descriptionbox-nav-box.fade:hover {
+  color: #D97D54;
+  transition: 0.3s;
+}
+
+/* ✅ Responsive styles */
+@media screen and (max-width: 768px) {
+  .DescriptionBox {
+    padding: 30px 4%;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 18px;
+  }
+
+  .descriptionbox-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .DescriptionBox {
+    padding: 25px 3%;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .descriptionbox-description {
+    font-size: 13.5px;
+  }
+}

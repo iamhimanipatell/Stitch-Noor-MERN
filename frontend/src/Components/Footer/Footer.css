@@ -1,0 +1,145 @@
+.footer {
+  padding: 60px 5%;
+  background-color: #302b2b;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  cursor: pointer;
+  font-size: 15px;
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #D97D54;
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-icons-container {
+  background-color: #bcbbbb;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icons-container:hover {
+  transform: scale(1.1);
+  background-color: #D97D54;
+}
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  border: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ✅ Responsive for tablets */
+@media screen and (max-width: 768px) {
+  .footer-logo p {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .footer-links li {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Responsive for mobile */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 40px 6%;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-logo p {
+    font-size: 18px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-links li {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-social-icon {
+    gap: 14px;
+  }
+
+  .footer-icons-container {
+    padding: 8px;
+  }
+
+  .footer-icons-container img {
+    width: 18px;
+    height: 18px;
+  }
+}
