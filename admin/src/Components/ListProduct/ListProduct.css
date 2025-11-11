@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #fffaf0; /* warm creamy background */
+  --card-color: #fffbee; /* pastel soft yellow */
+  --text-dark: #5b420d;  /* dark golden brown */
+  --accent-color: #fbfbfb; /* soft pastel yellow-orange */
+  --hover-bg: #fff1c4;   /* slightly deeper pastel */
+  --border-color: #f3e4cb;
+}
+
+.list-product {
+  padding: 20px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+.list-product h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: var(--text-dark);
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 100px 120px 60px;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.listproduct-format {
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+.listproduct-format:hover {
+  background-color: var(--hover-bg);
+}
+
+.listproduct-product-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e0d2b1;
+}
+
+.listproduct-remove-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.listproduct-remove-icon:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  border: 0.5px solid var(--border-color);
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .listproduct-format-main {
+    grid-template-columns: 60px 120px 80px 80px 100px 40px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  .listproduct-product-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .listproduct-remove-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .list-product h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .listproduct-format-main {
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: auto auto auto;
+    font-size: 0.85rem;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .listproduct-format-main p,
+  .listproduct-format-main img {
+    grid-column: span 2;
+  }
+
+  .list-product h1 {
+    font-size: 1.3rem;
+  }
+}

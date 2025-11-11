@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #fffaf0; /* warm creamy background */
+  --card-color: #fff5da; /* pastel soft yellow */
+  --text-dark: #5b420d;  /* dark golden brown */
+  --accent-color: #e2cb8d; /* soft pastel yellow-orange */
+  --hover-bg: #fff1c4;   /* slightly deeper pastel */
+  --border-color: #f3e4cb;
+}
+
+.addproduct {
+   padding: 20px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Field Container */
+.addproduct-itemfield {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 600px;
+}
+
+.addproduct-itemfield p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Inputs and Dropdowns */
+.addproduct-itemfield input,
+.addproduct-itemfield select,
+.addproduct-itemfield textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #fff9f5;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.addproduct-itemfield input:focus,
+.addproduct-itemfield select:focus,
+.addproduct-itemfield textarea:focus {
+  border-color: #c8a76c;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Price Section */
+.addproduct-price {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Upload Image Container */
+.addproduct-thumbnail-img {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed #e1c5aa;
+  border-radius: 12px;
+  background-color: #fffaf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  object-fit: cover;
+}
+
+.addproduct-thumbnail-img:hover {
+  border-color: #c49a75;
+  background-color: #fef7ed;
+  transform: scale(1.02);
+}
+
+/* Submit Button */
+.addproduct-btn {
+  width: 180px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.addproduct-btn:hover {
+  background-color: #d8a043;
+  transform: scale(1.02);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .addproduct {
+    padding: 16px;
+  }
+
+  .addproduct-price {
+    flex-direction: column;
+  }
+
+  .addproduct-btn {
+    width: 100%;
+  }
+
+  .addproduct-thumbnail-img {
+    width: 100%;
+  }
+}
